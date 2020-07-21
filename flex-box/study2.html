@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>study2</title>
+    <style>
+        .container {
+            width: 750px;
+            margin: 0 auto;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            height: 100px;
+        }
+        .header h1 {
+            font-size: 5rem;
+            margin: 0;
+        }
+        .header h2 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        .box {
+            display: flex;
+            height: 700px;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-content: space-around;
+        }
+        .circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+        .sky {
+            background: skyblue;
+        }
+        .grey {
+            background: grey;
+        }
+        .green {
+            background: green;
+        }
+        .ul-box {
+            display: flex;
+            justify-content: flex-start;
+            margin-bottom: 3rem;
+        }
+        .list {
+            list-style: none;
+            padding-left: 0;
+            padding-right: 40px;
+        }
+        .ul-box p {
+            flex-grow: 1;
+            text-align: end;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <header class="header">
+          <h1>Paris</h1>
+          <h2>06.</h2>
+      </header>
+      <hr>
+      <div class="ul-box">
+        <ul class="list">
+            <li>COUNTRY</li>
+            <li>FRANCE</li>
+            <li>POPULATION</li>
+            <li>2,249,975</li>
+            <li>COORDINATES</li>
+            <li>48*51*24*N</li>
+            <li>2*21*O3*E</li>
+        </ul>
+        <ul class="list">
+            <li>COLOURS</li>
+            <li>GIR MO YO KO</li>
+            <li>GO MO YO K74</li>
+            <li>G100 MO Y84 KO</li>
+        </ul>
+        <p>WWW.NICKBARCLAYDESIGNS</p>
+      </div>
+      <div class="box">
+          <div class="circle sky"></div>
+          <div class="circle sky"></div>
+          <div class="circle sky"></div>
+          <div class="circle grey"></div>
+          <div class="circle grey"></div>
+          <div class="circle grey"></div>
+          <div class="circle green"></div>
+          <div class="circle green"></div>
+          <div class="circle green"></div>
+      </div>
+  </div>  
+</body>
+</html>
