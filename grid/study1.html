@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father {
+            display: grid;
+            grid-template-rows: 250px 250px 250px;
+            grid-template-columns: 150px 230px 320px;
+            gap: 5px;
+        }
+        .child {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: blue;
+        }
+        .grid-father {
+            display: grid;
+            width: 100%;
+            height: 100vh;
+            grid-template-rows: 100px repeat(3, auto);
+            grid-template-columns: repeat(4, auto);
+            grid-template-areas: 
+                "header header header header"
+                "content content content nav"
+                "content content content nav"
+                "footer footer footer footer";
+        }
+        .header {
+            grid-area: header;
+            background: #111;
+        }
+        .content {
+            grid-area: content;
+            background: #555;
+        }
+        .nav {
+            grid-area: nav;
+            background: #999;
+        }
+        .footer {
+            grid-area: footer;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="father">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+        <div class="child">6</div>
+        <div class="child">7</div>
+        <div class="child">8</div>
+        <div class="child">9</div>
+    </div> -->
+    <div class="grid-father">
+        <div class="header"></div>
+        <div class="content"></div>
+        <div class="nav"></div>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>
