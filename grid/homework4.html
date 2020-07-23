@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .grid {
+            display: grid;
+            width: 100%;
+            height: 100vh;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas: 
+            "mint gree" 
+            "re  box";
+        }
+        .mint {
+            grid-area: mint;
+            background-color: #31c48d;
+            display: grid;
+            place-items: center center;
+            font-size: 5rem;
+            color: red;
+        }
+        .green {
+            grid-area: gree;
+            background-color: green;
+            display: grid;
+            place-items: center center;
+            font-size: 5rem;
+            color: white;
+        }
+        .red {
+            grid-area: re;
+            background-color: red;
+            display: grid;
+            place-items: center center;
+            font-size: 5rem;
+            color: white;
+        }
+        .box {
+            display: grid;
+            width: 100%;
+            height: 100%;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas:
+            "pin purpl"
+            "yello cora";
+        }
+        .box-pink {
+            grid-area: pin;
+            background: pink;
+            display: grid;
+            place-items: center center;
+            font-size: 2.5rem;
+            color: red;
+        }
+        .box-yellow {
+            grid-area: yello;
+            background: yellow;
+            display: grid;
+            place-items: center center;
+            font-size: 2.5rem;
+            color: red;
+        }
+        .box-purple {
+            grid-area: purpl;
+            background: purple;
+            display: grid;
+            place-items: center center;
+            font-size: 2.5rem;
+            color: white;
+        }
+        .box-coral {
+            grid-area: cora;
+            background: coral;
+            display: grid;
+            place-items: center center;
+            font-size: 2.5rem;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="mint">Ostrich</div>
+        <div class="green">Ostrich</div>
+        <div class="red">Ostrich</div>
+        <div class="box">
+            <div class="box-pink">Ostrich</div>
+            <div class="box-purple">Ostrich</div>
+            <div class="box-yellow">Ostrich</div>
+            <div class="box-coral">Ostrich</div>
+        </div>
+    </div>
+</body>
+</html>

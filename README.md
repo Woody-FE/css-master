@@ -1,5 +1,33 @@
 # CSS MASTERS
 
+## GRID
+
+- GRID 사용
+
+  > Grid도 부모에게 선언해서 사용한다.
+
+- grid-template-rows, grid-template-columns
+
+  > 화면을 분할하며 repeat()로 여러개를 만들어 낼 수 있다.
+  >
+  > 이것 또한 부모에 선언하지만 width, height값이 없으면 auto같은 값을 사용할 수 없다.
+
+- grid-template-area
+
+  > "header header header"
+  >
+  > "content content sidebar"
+  >
+  > "footer footer footer" 등으로 표현할 수 있으며
+  >
+  > 자식값에 이름에 맞는 grid-area 속성값이 존재해야한다. ex) grid-area: header;
+
+
+
+
+
+
+
 # Flexbox
 
 - Flex 사용
@@ -45,6 +73,8 @@
 - order
 
   > 자식들의 순서를 바꾸기 위해 주는 속성 값, default가 0이며 1,2 등등의 값을 줘서 순서를 미룰 수 있다.
+
+  
 
   
 
