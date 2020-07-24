@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1, h3, p {
+            text-align: center;
+        }
+        .grid {
+            display: grid;
+            width: 100%;
+            height: 100vh;
+            grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+            grid-template-columns: repeat(6, minmax(100px, 1fr));
+        }
+        .box {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .grey {
+            background: grey;
+        }
+        .yellow {
+            background: yellow;
+        }
+        .red {
+            background: red;
+        }
+        .purple {
+            background: purple;
+        }
+        .coral {
+            background: coral;
+        }
+        .sky {
+            background: skyblue;
+        }
+        .green {
+            background: green;
+        }
+        .pink {
+            background: pink;
+        }
+    </style>
+</head>
+<body>
+    <h1>Foreword, Contributors</h1>
+    <div class="grid">
+        <div class="box grey">
+            <h3>Tools for Slowing<br>Down</h3>
+            <p>Chloe Geoghegan & Chloe Reith</p>
+        </div>
+        <div class="box">
+            <img src="http://contents.dt.co.kr/images/201807/2018071802109922810001[1].jpg?var=1837" alt="">
+        </div>
+        <div class="box yellow">
+            <h3>The (Old) New<br>Spirit of Curating<br>and Myths of<br>Nomadism</h3>
+            <p>Tim Gentles</p>
+        </div>
+        <div class="box">
+            <img src="https://i.pinimg.com/originals/52/c7/ab/52c7ab7f3825f0b804555681b7c6098b.jpg" alt="">
+        </div>
+        <div class="box red">
+            <h3>Pressing<br>Singularities</h3>
+            <p>Tendai John Mutambu &<br>Robyn Maree Pickens</p>
+        </div>
+        <div class="box purple">
+            <h3>We're in This<br>Together</h3>
+            <p>Vera Mey</p>
+        </div>
+        <div class="box sky">
+            <h3>The Curatorial as a<br>Liveable Subject<br>Position:<br>Hospitality and<br>Differential<br>Consciousness</h3>
+            <p>Danny Butt</p>
+        </div>
+        <div class="box coral">
+            <h3>Community,<br>Community Art,<br>Community Art in<br>Howick</h3>
+            <p>Balamohan Shingade</p>
+        </div>
+        <div class="box">
+            <img src="http://image.yes24.com/momo/TopCate913/MidCate009/91285134.jpg" alt="">
+        </div>
+        <div class="box green">
+            <h3>Feeling Welcome?</h3>
+            <p>Louisa Afoa &<br>loana Gordon-Smith</p>
+        </div>
+        <div class="box">
+            <img src="https://t1.daumcdn.net/cfile/tistory/2417C53557116CA62D" alt="">
+        </div>
+        <div class="box pink">
+            <h3>On Friendship</h3>
+            <p>Rebecca Boswell</p>
+        </div>
+    </div>
+</body>
+</html>
