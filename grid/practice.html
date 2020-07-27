@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            margin: 0;
+        }
+        ul {
+            margin: 0;
+            padding: 1rem;
+        }
+        li {
+            list-style: none;
+            font-size: 1.5rem;
+        }
+        h3 {
+            padding: 1rem;
+            margin: 0;
+        }
+        .container {
+            display: grid;
+            grid-template-rows: 100vh;
+            grid-template-columns: repeat(2, 50vw);
+            grid-template-areas: "color text";
+        }
+        .color-box {
+            grid-area: color;
+            display: grid;
+            width: 100%;
+            height: 100%;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: 
+            "black-box purple-box"
+            "red-box white-box"
+            "red-box yellow-box";
+
+        }
+        .text-box {
+            grid-area: text;
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .black-box {
+            background-color: black;
+            color: white;
+            grid-area: black-box;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: column;
+            font-size: 1.8rem;
+        }
+        .back {
+            transform: scaleY(-1);
+        }
+        .purple-box {
+            background-color: purple;
+            grid-area: purple-box;
+        }
+        .red-box {
+            background-color: red;
+            grid-area: red-box;
+        }
+        .yellow-box {
+            background-color: yellow;
+            grid-area: yellow-box;
+            font-size: 1.5rem;
+            padding: 10px;
+        }
+        .speakers {
+            display: flex;
+            flex-direction: column;
+        }
+        .artists {
+            display: flex;
+            flex-direction: column;
+        }
+        .text-list {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+        .text-list li:hover {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="color-box">
+            <div class="black-box">
+                <p class="back">CHANGES</p> 
+                <p class="front">CHANGES</p> 
+                <p class="back">CHANGES</p> 
+                <p class="front">CHANGES</p>
+                <p>JULY 4-5</p> 
+            </div>
+            <div class="purple-box"></div>
+            <div class="red-box">
+                <ul>
+                    <li>ABOUT</li>
+                    <li>CONTACT</li>
+                    <li>VENUES</li>
+                    <li>FAQ</li>
+                    <li>PARTNERS</li>
+                </ul>
+            </div>
+            <div class="white-box"></div>
+            <div class="yellow-box">
+                TICKETS
+            </div>
+        </div>
+        <div class="text-box">
+            <div class="speakers">
+                <h3>SPEAKERS</h3>
+                <ul class="text-list">
+                    <li>ABBY GEE</li>
+                    <li>ABBY GEE</li>
+                    <li>ABBY GEE</li>
+                    <li>ABBY GEE</li>
+                    <li>ABBY GEE</li>
+                    <li>ABBY GEE</li>
+                    <li>ABBY GEE</li>
+                    <li>ABBY GEE</li>
+                    <li>ABBY GEE</li>
+                    <li>ABBY GEE</li>
+                    <li>ABBY GEE</li>
+                    <li>ABBY GEE</li>
+                    <li>ABBY GEE</li>
+                    <li>ABBY GEE</li>
+                    <li>ABBY GEE</li>
+                </ul>
+            </div>
+            <div class="artists">
+                <h3>ARTISTS</h3>
+                <ul class="text-list">
+                    <li>EAST BRUNSWICK ALL</li>
+                    <li>EAST BRUNSWICK ALL</li>
+                    <li>EAST BRUNSWICK ALL</li>
+                    <li>EAST BRUNSWICK ALL</li>
+                    <li>EAST BRUNSWICK ALL</li>
+                    <li>EAST BRUNSWICK ALL</li>
+                    <li>EAST BRUNSWICK ALL</li>
+                    <li>EAST BRUNSWICK ALL</li>
+                    <li>EAST BRUNSWICK ALL</li>
+                    <li>EAST BRUNSWICK ALL</li>
+                    <li>EAST BRUNSWICK ALL</li>
+                    <li>EAST BRUNSWICK ALL</li>
+                    <li>EAST BRUNSWICK ALL</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
